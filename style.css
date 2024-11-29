@@ -1,0 +1,150 @@
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #3a3a3a;
+    color: #f56a1d;
+    padding: 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0 0;
+}
+
+nav ul li {
+    position: relative;
+    margin: 0 15px;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    color: #f56a1d;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav ul li button:hover {
+    text-decoration: underline;
+}
+
+.dropdown ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #3a3a3a;
+    padding: 10px;
+    border-radius: 5px;
+    display: block;
+    z-index: 1;
+}
+
+.dropdown ul li button {
+    display: block;
+    color: #f56a1d;
+    background: none;
+    border: none;
+    padding: 5px 0;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+section {
+    background-color: #e8e8e8;
+    padding: 2rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #f56a1d;
+}
+
+/* Styles for Catalogs */
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    justify-items: center;
+}
+
+.catalogo .item {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+}
+
+.catalogo .item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.catalogo .item h3 {
+    color: #f56a1d;
+}
+
+.catalogo .item p {
+    color: #333;
+}
+
+.catalogo .item button {
+    background-color: #f56a1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.catalogo .item button:hover {
+    background-color: #d45410;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #3a3a3a;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+button {
+    background-color: #f56a1d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #d45410;
+}

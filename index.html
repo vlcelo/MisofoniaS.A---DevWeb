@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misofonia Inc.</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Misofonia Inc.</h1>
+            <nav>
+                <ul>
+                    <li><button @click="view = 'home'">Home</button></li>
+                    <li><button @click="view = 'sobre'">Sobre Nós</button></li>
+                    <li><button @click="view = 'contato'">Contato</button></li>
+                    <li class="dropdown">
+                        <button @click="toggleDropdown('alarmes')">Alarmes</button>
+                        <ul v-if="dropdowns.alarmes">
+                            <li><button @click="view = 'alarmCatalogo'">Catálogo</button></li>
+                            <li><button @click="view = 'alarmPlano'">Plano</button></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <button @click="toggleDropdown('caixas')">Caixas de Som</button>
+                        <ul v-if="dropdowns.caixas">
+                            <li><button @click="view = 'soundCatalogo'">Catálogo</button></li>
+                            <li><button @click="view = 'soundPlano'">Plano</button></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <component :is="view"></component>
+        </main>
+        <footer>
+            <p>&copy; 2024 Misofonia Inc. | Onde irritar é uma arte.</p>
+        </footer>
+    </div>
+</body>
+</html>
