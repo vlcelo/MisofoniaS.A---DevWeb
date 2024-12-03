@@ -51,7 +51,7 @@ new Vue({
                 <p>
                     Descubra nossos produtos e leve sua criatividade (e paciência) a novos níveis.
                 </p>
-                <button @click="$root.view = 'catalogo'" class="cta-button">Conheça o Catálogo</button>
+                <button @click="$root.view = 'soundCatalogo'" class="cta-button">Conheça o Catálogo</button>
             </div>
         </section>
             `,
