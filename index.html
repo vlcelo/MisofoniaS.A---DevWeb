@@ -11,7 +11,7 @@
 <body>
     <div id="app">
         <header>
-            <h1>Misofonia Inc.</h1>
+            <img class="logohead" src="/imagens/misofoniaO.png" alt="Misofonia">            
             <nav>
                 <ul>
                     <li><button @click="view = 'home'">Home</button></li>
@@ -37,8 +37,8 @@
         <main>
             <component :is="view"></component>
         </main>
-        <footer>
-            <p>&copy; 2024 Misofonia Inc. | Onde irritar é uma arte.</p>
+        <footer class="footer">
+            <p>&copy; 2024 Misofonia Inc. - Todos os direitos reservados</p>
         </footer>
     </div>
 </body>
